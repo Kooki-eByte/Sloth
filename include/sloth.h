@@ -1,25 +1,35 @@
-#include "../../Greed/include/greed.h"
 #ifndef SLOTH
 #define SLOTH
 
-typedef struct Vec2 {
+#include "defines.h"
+
+// --- Sloth Math Structs --- //
+
+typedef struct S_Vec2_F32 {
   f32 x;
   f32 y;
-} Vec2;
+} S_Vec2_F32;
 
-typedef struct Vec3 {
+typedef struct S_Vec3_F32 {
   f32 x;
   f32 y;
   f32 z;
-} Vec3;
+} S_Vec3_F32;
 
-typedef struct Vec4 {
+typedef struct S_Vec4_F32 {
   f32 x;
   f32 y;
   f32 z;
   f32 w;
-} Vec4;
+} S_Vec4_F32;
 
-f32 vec2_dot_product(Vec2 *v1, Vec2 *v2);
-f32 vec2_cross_product(Vec2 *v1, Vec2 *v2);
+// --- END Sloth Math Structs --- //
+
+
+// --- Sloth Math Function Definitions --- //
+
+f32 sloth_vec2_dot_product(S_Vec2_F32 *v1, S_Vec2_F32 *v2);
+f32 sloth_vec2_cross_product(S_Vec2_F32 *v1, S_Vec2_F32 *v2);
+
+// --- End Sloth Math Function Definitions --- //
 #endif
